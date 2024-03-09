@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  habr_parser:
+    build: .
+    volumes:
+      - ./habr.db:/app/habr.db
+    command: python main.py
